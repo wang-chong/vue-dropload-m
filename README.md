@@ -9,13 +9,13 @@ import 'dropload' from 'vue-dropload-m'
 Vue.use(dropload)
 
 ## code
-<div>
+<code>'<div>
 	<dropload ref="drop" :loadUpFn="reFreshData" :loadDownFn="getMoreData">
 		<div v-for="item in datalist" class="list">
 		  	我是内容{{item}}！！！
 		</div>
 	</dropload>
-</div>
+</div>'</code>
 
 ## props
 
