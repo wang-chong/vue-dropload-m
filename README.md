@@ -1,6 +1,30 @@
-# vue-dropload
+# vue-dropload-m
+
 
 > 基于vue实现的移动端下拉刷新、上拉加载更多组件
+
+## use
+
+import 'dropload' from 'vue-dropload-m'
+Vue.use(dropload)
+
+## code
+<div>
+	<dropload ref="drop" :loadUpFn="reFreshData" :loadDownFn="getMoreData">
+		<div v-for="item in datalist" class="list">
+		  	我是内容{{item}}！！！
+		</div>
+	</dropload>
+</div>
+
+## props
+
+### loadUpFn(function)
+下拉刷新函数，获取数据渲染之后运行该组件的resetUp方法（必须）进行恢复状态
+
+### loadDownFn(function)
+上拉刷新函数，获取数据渲染之后运行该组件的resetDown方法（必须）进行恢复状态
+
 
 ## Build Setup
 
