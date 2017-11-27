@@ -9,7 +9,13 @@ import 'dropload' from 'vue-dropload-m'
 Vue.use(dropload)
 
 ## code
-<code>%3Cdiv%3E%09%3Cdropload%20ref=%22drop%22%20:loadUpFn=%22reFreshData%22%20:loadDownFn=%22getMoreData%22%3E%09%09%3Cdiv%20v-for=%22item%20in%20datalist%22%20class=%22list%22%3E%09%09%20%20%09%E6%88%91%E6%98%AF%E5%86%85%E5%AE%B9%7B%7Bitem%7D%7D%EF%BC%81%EF%BC%81%EF%BC%81%09%09%3C/div%3E%09%3C/dropload%3E%3C/div%3E</code>
+&lt;div&gt;\<br />
+<span style="white-space:pre;"> </span>&lt;dropload ref="drop" :loadUpFn="reFreshData" :loadDownFn="getMoreData"&gt;\<br />
+<span style="white-space:pre;"> </span>&lt;div v-for="item in datalist" class="list"&gt;\<br />
+<span style="white-space:pre;"> </span>&nbsp; <span style="white-space:pre;"> </span>我是内容{{item}}！！！\<br />
+<span style="white-space:pre;"> </span>&lt;/div&gt;\<br />
+<span style="white-space:pre;"> </span>&lt;/dropload&gt;\<br />
+&lt;/div&gt;<br />
 
 ## props
 
